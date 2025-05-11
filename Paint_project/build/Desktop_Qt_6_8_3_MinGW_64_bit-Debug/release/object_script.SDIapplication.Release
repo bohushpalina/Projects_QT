@@ -1,0 +1,11 @@
+release/circle.o
+release/drawwidget.o
+release/freeline.o
+release/line.o
+release/main.o
+release/mainwindow.o
+release/rectangle.o
+release/settings.o
+release/moc_drawwidget.o
+release/moc_mainwindow.o
+release/moc_settings.o

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QWidget" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>273</width>
+    <height>164</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #1c1c1c;  /* Черный фон */
+    border: 2px solid #FFD700;  /* Золотистая рамка */
+    border-radius: 4px;         /* Умеренные скругления */
+    padding: 8px;               /* Отступы внутри */
+    color: white;               /* Белый текст */
+}
+
+QLabel, QSpinBox, QSlider {
+    color: white;               /* Белый цвет текста */
+    background-color: #333333;  /* Темный фон для текстовых полей и слайдера */
+    border: 1px solid #FFD700;  /* Золотистые рамки */
+    border-radius: 3px;         /* Менее выраженные скругления */
+}
+
+QPushButton {
+    color: white;               /* Белый текст на кнопках */
+    background-color: #FFD700;  /* Золотистый фон для кнопок */
+    border: 1px solid #FFD700;  /* Золотистые рамки */
+    border-radius: 4px;         /* Умеренные скругления */
+    padding: 2px 8px;          /* Легкие отступы внутри кнопки */
+    font-weight: bold;          /* Жирный текст на кнопках */
+}
+
+QPushButton:hover {
+    background-color: #FFCC00;  /* Ярко-золотистый при наведении */
+}
+
+QSpinBox, QSlider {
+    background-color: #333333;  /* Темный фон для слайдеров и спинбоксов */
+    color: white;               /* Белый текст */
+    border: 1px solid #FFD700;  /* Золотистые рамки */
+    border-radius: 3px;         /* Менее выраженные скругления */
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+    background-color: #FFD700;  /* Золотистый фон кнопок для спинбокса */
+    border-radius: 3px;
+}
+
+QSlider::handle {
+    background-color: #FFD700;  /* Золотой ползунок */
+    border-radius: 1px;
+}
+
+QSlider {
+    background-color: #333333;  /* Темный фон для слайдера */
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="colorButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>108</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Изменить цвет</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>108</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="thicknessSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>65</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSlider" name="rotationSlider">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>70</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>9</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
