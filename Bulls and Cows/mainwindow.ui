@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>691</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="new_game">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #dfe6e9;
+    border: 2px solid #b2bec3;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3436;
+}
+QPushButton:hover {
+    background-color: #b2bec3;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Новая игра</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="info">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>271</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #636e72;
+    background-color: #f0f0f0;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Игра не начата</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="records">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>40</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #dcdde1;
+    border: 2px solid #a4b0be;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2f3542;
+}
+QPushButton:hover {
+    background-color: #ced6e0;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Рекорды</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Entering">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>120</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #636e72;
+    background-color: #f0f0f0;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Введите число</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>130</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #f5f6fa;
+    border: 2px solid #dcdde1;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 16px;
+    color: #2f3640;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Check_but">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>110</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #f1f2f6;
+    border: 2px solid #ced6e0;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2f3542;
+}
+QPushButton:hover {
+    background-color: #dcdde1;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Проверить</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="results">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>180</y>
+      <width>541</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    background-color: #ffffff;
+    border: 2px solid #dcdde1;
+    font-size: 14px;
+    color: #2d3436;
+    gridline-color: #dcdde1;
+}
+QHeaderView::section {
+    background-color: #dfe6e9;
+    color: #2d3436;
+    font-weight: bold;
+    padding: 4px;
+    border: 1px solid #dcdde1;
+}
+QTableWidget::item {
+    padding: 6px;
+}
+</string>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <property name="columnCount">
+     <number>3</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>40</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>691</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Быки и коровы</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

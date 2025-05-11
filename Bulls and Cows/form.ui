@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>578</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="leaderboard">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>501</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background-color: #ffffff;
+    border: 2px solid #dcdde1;
+    font-size: 14px;
+    color: #2d3436;
+    gridline-color: #dcdde1;
+}
+QHeaderView::section {
+    background-color: #dfe6e9;
+    color: #2d3436;
+    font-weight: bold;
+    padding: 4px;
+    border: 1px solid #dcdde1;
+}
+QTableWidget::item {
+    padding: 6px;
+}
+</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
